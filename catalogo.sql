@@ -18,6 +18,7 @@ CREATE TABLE usuario(
 	id_rol INT NOT NULL,
 	nombre VARCHAR(50) NOT NULL,
 	contraseña VARCHAR(50) NOT NULL,
+	activo TINYINT not null, 
 	CONSTRAINT pk_id_rol PRIMARY KEY(id),
 	FOREIGN KEY(id_rol) REFERENCES rol(id)	
 );
