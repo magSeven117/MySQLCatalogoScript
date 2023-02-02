@@ -26,7 +26,9 @@ CREATE TABLE factura(
 	id INT AUTO_INCREMENT,
 	id_usuario INT NOT NULL,
 	total_fac float NOT NULL,
+	fecha date NOT NULL,
 	CONSTRAINT pk_id_factura PRIMARY KEY(id),
+
 	FOREIGN KEY(id_usuario) REFERENCES usuario(id)	
 );
 
