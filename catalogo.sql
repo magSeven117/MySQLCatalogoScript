@@ -5,6 +5,7 @@ CREATE TABLE producto(
 	nombre VARCHAR(50) NOT NULL,
 	precio FLOAT NOT NULL,
 	stock INT,
+	activo TINYINT not null, 
 	CONSTRAINT pk_id_producto PRIMARY KEY(id)	
 );
 
